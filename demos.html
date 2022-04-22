@@ -1,0 +1,200 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Texarkanasaurus.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Goldman' rel='stylesheet'>
+<style>
+body, html {height: 100%}
+body {font-family: "Oswald", sans-serif}
+h1, h2, #copyrightNotice {
+  font-family: "Bakbak One", sans-serif}
+h3, h4, h5, h6 {
+  font-family: "Permanent Marker", sans-serif;
+  color: #AE2F2F;
+}
+#logoBar {
+  font-family: "Goldman", sans-serif;
+  color: #FE602F;
+}
+#myNavbar {font-family: "Anton", sans-serif}
+#contactMe {
+  font-family: "Bakbak One", sans-serif;
+}
+#home {
+  font-family: "Bakbak One", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("DoggosBG.png");
+  background-attachment: fixed;
+  min-height: 50%;
+}
+.bgimg2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("DoggosBG.png");
+  background-attachment: fixed;
+  min-height: 35%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <!--<div class="w3-bar w3-xxxlarge w3-black" style="display:flex; flex-direction: row; justify-content: left; align-items: center" id="logoBar">
+    <img src="TXKS_Thumbnail_Transparent.png" style="width:100px;height:100px;">
+    <p>TEXARKANASAURUS</p>
+  </div>-->
+  <div class="row w3-bar w3-xxxlarge w3-black">
+    <div class="column">
+      <img src="TXKS_Thumbnail_Transparent.png" style="width:3.2em;height:3.2em;">
+    </div>
+  <div class="column" id="logoBar">
+    <p>TEXARKANASAURUS</p>
+  </div>
+  <div class="column">
+    <p></p>
+  </div>
+</div>
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button" style="color: #3dc3e9">Game Demos</a>
+    <a href="apps.html" class="w3-bar-item w3-button">Apps</a>
+    <a href="aboutme.html" class="w3-bar-item w3-button">About Me</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg2 w3-display-container " id="home">
+  <!--<div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Texarkanasaurus.com</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>texarkanasaurus</b></span>
+  </div>-->
+</header>
+
+
+
+<!-- App Page Container -->
+<!--<div class="bgimg w3-col l8 s12"> -->
+  <div class=" bgimg w3-container w3-padding-64 w3-xlarge">  
+  <div class="w3-card-12 w3-margin w3-black" style="opacity: 0.8; margin: 0 auto">
+    <div class="w3-container center">
+      <h1><b>GAME DEMOS</b></h1>
+    </div>
+
+    <div class="w3-container center">
+      <p>All of these should be playable in the browser.  I developed them for Android, so as a disclaimer, let me say that the WebGL builds aren't the intended platform.  I'll include notes on what you're missing out on.  That way, you can close your eyes and use the power of imagination to truly experience these demonstrations at their fullest potential.
+        <br><br>Unless otherwise noted, all of these are made in Unity.  My non-Unity projects aren't so easy to share.
+      </p>
+    </div>
+  </div>
+
+  <!--Break-->
+  <p><br><br><br></p>>
+
+  <!-- App Card -->
+  <div class="w3-card-12 w3-margin w3-black" style="opacity: 0.95; margin: 0 auto">
+    <img src="jjf.jpg" alt="Nature" class="center">
+    <div class="w3-container center">
+      <h1><b>Jumpy Jumpy Froggy</b></h1>
+      <h3>Proof of Concept</span></h3>
+    </div>
+
+    <div class="w3-container center" style="background-color: #232323">
+      <p>A modern Unity retelling of a classic game.  I say classic not because it is well known and beloved by all, but because I made it in Visual Basic as a kid.  Maybe classic is the wrong word.  Who knows?  Make the frogs eat the flies by clicking on them to make them jump.  Then buy MORE frogs to catch MORE flies.  Classic.
+        <br><br>The clickable areas of the frogs is a little large for the precision of a mouse.  It makes more sense when using a finger on the phone.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p>
+            <form method="post" action="https://github.com/texarkanasaurus/jumpyjumpyfroggy">
+              <button class="w3-button w3-padding-large w3-white w3-border"><b>Play in Browser »</b></button>
+            </form>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p><br></p>
+
+  <!-- App Card -->
+  <div class="w3-card-12 w3-margin w3-black" style="opacity: 0.95; margin: 0 auto">
+    <img src="Voxel.png" alt="Nature" class="center">
+    <div class="w3-container center">
+      <h1><b>Generic Voxel System</b></h1>
+      <h3>    Demonstration</span></h3>
+    </div>
+
+    <div class="w3-container center"  style="background-color: #232323">
+      <p>This is a simple demonstration of a voxel game.  I just made this as a learning experience.  Fun, right?  The HUD is, at the moment, going for more of a 'functional' aesthetic. 
+        <br><br>The Android version uses touches that originate on one side of the screen for looking around, and the other side for movement.  The WebGL version just uses a less impressive WASD/Mouse combo.
+        <br><br>Click to delete a block, and press 1, 2, or 3 to add different styles of block.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p>
+            <form method="post" action="https://github.com/texarkanasaurus/jumpyjumpyfroggy">
+              <button class="w3-button w3-padding-large w3-white w3-border"><b>Play in Browser »</b></button>
+            </form>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div>
+  <footer class="w3-center w3-black w3-padding-48 w3-small" id="copyrightNotice">
+    <p>©2023 Texarkanasaurus.com</p>
+  </footer>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
