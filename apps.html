@@ -1,0 +1,171 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Texarkanasaurus.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Goldman' rel='stylesheet'>
+<style>
+body, html {height: 100%}
+body {font-family: "Oswald", sans-serif}
+h1, h2, #copyrightNotice {
+  font-family: "Bakbak One", sans-serif}
+h3, h4, h5, h6 {
+  font-family: "Permanent Marker", sans-serif;
+  color: #AE2F2F;
+}
+#logoBar {
+  font-family: "Goldman", sans-serif;
+  color: #FE602F;
+}
+#myNavbar {font-family: "Anton", sans-serif}
+#contactMe {
+  font-family: "Bakbak One", sans-serif;
+}
+#home {
+  font-family: "Bakbak One", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("DoggosBG.png");
+  background-attachment: fixed;
+  min-height: 50%;
+}
+.bgimg2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("DoggosBG.png");
+  background-attachment: fixed;
+  min-height: 50%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <!--<div class="w3-bar w3-xxxlarge w3-black" style="display:flex; flex-direction: row; justify-content: left; align-items: center" id="logoBar">
+    <img src="TXKS_Thumbnail_Transparent.png" style="width:100px;height:100px;">
+    <p>TEXARKANASAURUS</p>
+  </div>-->
+  <div class="row w3-bar w3-xxxlarge w3-black">
+    <div class="column">
+      <img src="TXKS_Thumbnail_Transparent.png" style="width:3.2em;height:3.2em;">
+    </div>
+  <div class="column" id="logoBar">
+    <p>TEXARKANASAURUS</p>
+  </div>
+  <div class="column">
+    <p></p>
+  </div>
+</div>
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="demos.html" class="w3-bar-item w3-button">Game Demos</a>
+    <a href="#" class="w3-bar-item w3-button" style="color: #3dc3e9">Apps</a>
+    <a href="aboutme.html" class="w3-bar-item w3-button">About Me</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+  <!--<div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Texarkanasaurus.com</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>texarkanasaurus</b></span>
+  </div>-->
+</header>
+
+
+
+<!-- App Page Container -->
+<!--<div class="bgimg w3-col l8 s12">-->
+<div class=" bgimg w3-container w3-padding-64 w3-xlarge">  
+  <div class="w3-card-12 w3-margin w3-black" style="opacity: 0.8; margin: 0 auto">
+    <div class="w3-container center">
+      <h1><b>APPS</b></h1>
+    </div>
+
+    <div class="w3-container center">
+      <p>At the time of writing this, I've only got one app on here.  I made it as part of a larger app, so expect more to show up eventually.  And just to cover my bases, if you've arrived here and there are dozens of apps, I apologize for not having edited this description.  
+        <br><br>These will link to their GitHub project sites so you can check them out before they're ready for release, if you're so inclined.
+      </p>
+    </div>
+  </div>
+
+  <!--Break-->
+  <p><br><br><br><br><br><br></p>>
+
+  <!-- App Card -->
+  <div class="w3-card-12 w3-margin w3-black" style="opacity: 0.95; margin: 0 auto">
+    <img src="fingerpaintApp.jpg" alt="Nature" class="center">
+    <div class="w3-container center">
+      <h1><b>GestureDraw</b></h1>
+      <h3>Not the final name </span></h3>
+    </div>
+
+    <div class="w3-container center"  style="background-color: #232323">
+      <p>I was watching a baby try to play with a fully featured drawing app, and they kept zooming in and out and panning way outside of the drawable area.  Kids, am I right?  Anyway, I made a toddler-proof app, and then got a little carried away adding more features into a debug menu anyway.  I'm currently working on moving those features over, so layers, color, and opacity can be manipulated without a menu.
+        <br><br>The same baby then used this app to draw the picture here.  If you squint, it kind of looks like a grim reaper crossing black velvet hills.  Maybe some things are best left undrawn. 
+        <br><br>But seriously, hopefully this will help some parents out there make a memorable keepsake once it's released to the app store.  For now, though, the code's available under a GPL 3.0 license.  It will be completely free, with no ads, because ads on kids' apps can be mildly infuriating.  At best.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p>
+            <form method="post" action="https://github.com/texarkanasaurus/Fingerpaint">
+              <button class="w3-button w3-padding-large w3-white w3-border"><b>GitHub »</b></button>
+            </form>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-small" id="copyrightNotice">
+  <p>©2023 Texarkanasaurus.com</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
