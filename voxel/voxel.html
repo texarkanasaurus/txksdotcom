@@ -38,7 +38,7 @@ h3, h4, h5, h6 {
 }
 #fullscreenButton {
     font-family: "Permanent Marker", sans-serif;
-    background-color: #232323;
+    color: #eeeeee;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 #home {
@@ -115,8 +115,8 @@ h3, h4, h5, h6 {
       <div class="footer">
         <div class="webgl-logo"></div>
         <!--<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)" id="fullscreenButton">Fullscreen Mode</div>-->
-          <div class="w3-container fullscreen" onclick="gameInstance.SetFullscreen(1)" id="fullscreenButton">
-				<a href="#" class="w3-btn w3-white">Go Fullscreen</a>
+          <div class="w3-container fullscreen"  id="fullscreenButton">
+				<a href="#" class="w3-btn w3-white" onclick="gameInstance.SetFullscreen(1)">Go Fullscreen</a>
 			</div>
           <div>WASD : Move
             <br>Mouse: Look Around
