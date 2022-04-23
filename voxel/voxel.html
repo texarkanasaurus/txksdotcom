@@ -114,8 +114,10 @@ h3, h4, h5, h6 {
       <div id="gameContainer" style="width: 1110px; height: 540px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)" id="fullscreenButton">Fullscreen Mode</div>
-        <!--<div class="title">Fullscreen</div>-->
+        <!--<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)" id="fullscreenButton">Fullscreen Mode</div>-->
+          <div class="w3-container fullscreen" onclick="gameInstance.SetFullscreen(1)" id="fullscreenButton">
+				<a href="#" class="w3-btn w3-white">Go Fullscreen</a>
+			</div>
           <div>WASD : Move
             <br>Mouse: Look Around
             <br>Left Click: Remove block
@@ -125,15 +127,6 @@ h3, h4, h5, h6 {
           </div>
               
       </div>
-      <!--<footer class="w3-container">
-        <p>WASD : Move
-        <br>Mouse: Look Around
-        <br>Left Click: Remove block
-        <br>1: Place Stone Block
-        <br>2: Place Dirt Block
-        <br>3: Place Grass Block
-        </p>
-      </footer>-->
     </div>
   <!--Add Game Here -->
 
