@@ -36,10 +36,15 @@ h3, h4, h5, h6 {
 #contactMe {
   font-family: "Bakbak One", sans-serif;
 }
+#fullscreenButton {
+    font-family: "Permanent Marker", sans-serif;
+    background-color: #232323;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 #home {
   font-family: "Bakbak One", sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
+}
 .menu {display: none}
 .bgimg {
   background-repeat: no-repeat;
@@ -109,7 +114,7 @@ h3, h4, h5, h6 {
       <div id="gameContainer" style="width: 1110px; height: 540px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)">Click for Fullscreen</div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)" id="fullscreenButton">Fullscreen Mode</div>
         <!--<div class="title">Fullscreen</div>-->
           <div>WASD : Move
             <br>Mouse: Look Around
