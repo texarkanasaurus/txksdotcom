@@ -10,11 +10,8 @@
 <script>
     var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGLBuild.json", {onProgress: UnityProgress});
 </script>
-<!-- -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
@@ -25,25 +22,35 @@
 body, html {height: 100%}
 body {font-family: "Oswald", sans-serif}
 h1 {
-  font-family: "Anton", sans-serif}
+  font-family: "Anton", sans-serif;
+  font-size: 4vw;
+}
 h2, #copyrightNotice {
-  font-family: "Bakbak One", sans-serif}
+  font-family: "Bakbak One", sans-serif;
+  font-size: 2vw;
+}
 h3, h4, h5, h6 {
   font-family: "Permanent Marker", sans-serif;
   color: #781B1B;
+  font-size: 4vw;
 }
 #logoBar {
   font-family: "Goldman", sans-serif;
   color: #FE602F;
+  font-size: 7vw;
 }
-#myNavbar {font-family: "Anton", sans-serif}
+#myNavbar {
+  font-family: "Anton", sans-serif;
+  font-size: 4vw;
+}
 #contactMe {
   font-family: "Bakbak One", sans-serif;
+  font-size: 4vw;
 }
 #fullscreenButton {
     font-family: "Permanent Marker", sans-serif;
     color: #eeeeee;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 4vw;
 }
 #home {
   font-family: "Bakbak One", sans-serif;
@@ -82,7 +89,7 @@ h3, h4, h5, h6 {
     <div class="column">
       <img src="../TXKS_Thumbnail_Transparent.png" style="width:3.2em;height:3.2em;">
     </div>
-  <div class="column" id="logoBar">
+  <div class="column w3-wide" id="logoBar">
     <p>TEXARKANASAURUS</p>
   </div>
   <div class="column">
