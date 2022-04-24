@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <title>Texarkanasaurus.com | Generic Voxel System</title>
@@ -25,7 +25,8 @@ body {
 }
 h1 {
   font-family: "Anton", sans-serif;
-  font-size: min(4vw, 2.5em);
+  font-size: min(3vw, 2.5em);
+  line-height: 0.5;
 }
 h2, #copyrightNotice {
   font-family: "Bakbak One", sans-serif;
@@ -34,7 +35,8 @@ h2, #copyrightNotice {
 h3, h4, h5, h6 {
   font-family: "Permanent Marker", sans-serif;
   color: #781B1B;
-  font-size: min(4vw, 1.5em);
+  font-size: min(2.5vw, 1.5em);
+  line-height: 0.5;
 }
 #logoBar {
   font-family: "Goldman", sans-serif;
@@ -46,13 +48,13 @@ h3, h4, h5, h6 {
   text-align:center;
 }
 #logoText {
-  line-height: 1.5;
+  line-height: 0;
   display: inline-block;
   vertical-align: middle;
 }
 #myNavbar {
   font-family: "Anton", sans-serif;
-  font-size: min(4vw, 2.5em);
+  font-size: min(3vw, 2em);
 }
 #contactMe {
   font-family: "Bakbak One", sans-serif;
@@ -61,7 +63,12 @@ h3, h4, h5, h6 {
 #fullscreenButton {
     font-family: "Permanent Marker", sans-serif;
     color: #eeeeee;
-    font-size: min(4vw, 1.5em);
+    font-size: min(3vw, 2.5em);
+    line-height: 0.5;
+}
+#instructions{
+    font-family: "Oswald", sans-serif;
+    font-size: min(3vw, 2.5em);
 }
 #home {
   font-family: "Bakbak One", sans-serif;
@@ -144,7 +151,7 @@ h3, h4, h5, h6 {
           <div class="w3-container fullscreen"  id="fullscreenButton">
             <a href="#" class="w3-btn w3-white" onclick="gameInstance.SetFullscreen(1)">Go Fullscreen</a>
           </div>
-          <div>WASD : Move
+          <div id="instructions">WASD : Move
             <br>Mouse: Look Around
             <br>Left Click: Remove block
             <br>1: Place Stone Block
@@ -167,3 +174,4 @@ h3, h4, h5, h6 {
 
 </body>
 </html>
+
