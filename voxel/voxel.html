@@ -21,12 +21,13 @@
 <style>
 body, html {height: 100%}
 body {
-  font-family: "Oswald", sans-serif;
+	font-family: "Oswald", sans-serif;
 }
 h1 {
   font-family: "Anton", sans-serif;
   font-size: min(3vw, 2.5em);
-  line-height: 0.5
+  line-height: 0.5;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 h2, #copyrightNotice {
   font-family: "Bakbak One", sans-serif;
@@ -37,15 +38,17 @@ h3, h4, h5, h6 {
   color: #781B1B;
   font-size: min(2.5vw, 1.5em);
   line-height: 0.6;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 #logoBar {
   font-family: "Goldman", sans-serif;
-  color: #FE602F;
+  color: #bf5f51;
   font-size: min(6vw, 5em);
   line-height: 11vw;
   height:11vw;
   max-height:11vw;
   text-align:center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 #logoText {
   line-height: 0;
@@ -61,14 +64,15 @@ h3, h4, h5, h6 {
   font-size: min(4vw, 2.5em);
 }
 #fullscreenButton {
-  font-family: "Permanent Marker", sans-serif;
-  color: #eeeeee;
-  font-size: min(3vw, 2.5em);
-  line-height: 0.5;
+    font-family: "Permanent Marker", sans-serif;
+    color: #eeeeee;
+    font-size: min(3vw, 2.5em);
+    line-height: 0.5;
 }
 #instructions{
-  font-family: "Oswald", sans-serif;
-  font-size: min(3vw, 1em);
+    font-family: "Oswald", sans-serif;
+    font-size: min(3vw, 1em);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 #home {
   font-family: "Bakbak One", sans-serif;
@@ -81,6 +85,11 @@ h3, h4, h5, h6 {
   background-image: url("../DoggosBG.png");
   background-attachment: fixed;
   min-height: 30%;
+}
+.titlebg {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../water.png");
 }
 .column {
   float: left;
@@ -103,9 +112,10 @@ h3, h4, h5, h6 {
     <img src="TXKS_Thumbnail_Transparent.png" style="width:100px;height:100px;">
     <p>TEXARKANASAURUS</p>
   </div>-->
-  <div class="row w3-bar w3-black">
+  <div class="titlebg row w3-bar">
     <div class="column">
-      <img src="../TXKS_Thumbnail_Transparent.png" style="width:10vw;height:10vw;">
+      <!--<img src="TXKS_Thumbnail_Transparent.png" style="width:100vw;height:10vw;">-->
+      <img src="../logoless.png" style="width:90%;height:90%;">
     </div>
     <div class="column w3-wide" id="logoBar">
       <p id="logoText">TEXARKANASAURUS</p>
@@ -115,7 +125,7 @@ h3, h4, h5, h6 {
     </div> -->
 </div>
   <!--<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">-->
-  <div class="bgimg w3-bar  text-color:black" style="opacity:.92;"id="myNavbar">
+  <div class="bgimg w3-bar  text-color:black" style="opacity:.92;" id="myNavbar">
     <a href="../index.html" class="w3-bar-item w3-button">Home</a>
     <a href="../demos.html" class="w3-bar-item w3-button">Game Demos</a>
     <a href="../apps.html" class="w3-bar-item w3-button">Apps</a>
@@ -135,21 +145,23 @@ h3, h4, h5, h6 {
 
 <!-- Game Container -->
 <div class="bgimg w3-container w3-padding-64 w3-xlarge">
-<div class="w3-black w3-card-12 w3-padding-64 w3-margin">
+<!--<div class="w3-black w3-card-12 w3-margin">-->
+<div class="w3-card-12 w3-margin" style="border: 5px solid black;background-color: #1b2024;color: #eeeeee; opacity: 0.98">
 
-<div class="w3-container w3-padding-64 center">
+<div class="w3-container center">
 
   <!--Add Game Here -->
     <div class="webgl-content">
       <h1>Generic Voxel System</h1>
-      <h3>Demonstration</h3>
+      <h3>Demonstration</h3><hr>
       <!--<div id="gameContainer" style="width: 960px; height: 600px"></div>-->
 	    <div id="gameContainer" style="width: 100%"></div>
+        <hr>
         <div class="footer w3-center">
     <!--<div class="webgl-logo"></div>-->
     <!--<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)" id="fullscreenButton">Fullscreen Mode</div>-->
           <div class="w3-container fullscreen"  id="fullscreenButton">
-            <a href="#" class="w3-btn w3-white" onclick="gameInstance.SetFullscreen(1)">Go Fullscreen</a>
+            <a href="#" class="w3-btn" style="border: 3px solid black;background-color: #eeeeee;color: #232323;" onclick="gameInstance.SetFullscreen(1)">Go Fullscreen</a>
           </div>
           <div id="instructions">
             <p>WASD : Move
