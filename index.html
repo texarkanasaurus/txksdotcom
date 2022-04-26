@@ -1,92 +1,150 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
 <title>Texarkanasaurus.com</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../txksicon.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Goldman' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
 <style>
 body, html {height: 100%}
-body {font-family: "Oswald", sans-serif}
-h1, h2, #copyrightNotice {
-  font-family: "Bakbak One", sans-serif}
+body {
+	font-family: "Oswald", sans-serif;
+  font-size: min(3vw, 1em);
+}
+h1 {
+  font-family: "Bakbak One", sans-serif;
+  font-size: min(5vw, 5em);
+  line-height: 0.8;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+h2 {
+  font-family: "Permanent Marker", sans-serif;
+  color: #781B1B;
+  font-size: min(2.5vw, 1.5em);
+  line-height: 1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-align: center;
+}
 h3, h4, h5, h6 {
   font-family: "Sacramento", sans-serif;
-  color: #FE602F;
+  color: #bf5f51;
+  font-size: min(4vw, 3em);
+  line-height: 1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-align: center;
 }
 #logoBar {
   font-family: "Goldman", sans-serif;
-  color: #FE602F;
+  color: #bf5f51;
+  font-size: min(6vw, 5em);
+  line-height: min(6vw, 5em);
+  height:min(6vw, 5em);
+  max-height:min(6vw, 5em);
+  text-align:center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-#myNavbar {font-family: "Anton", sans-serif}
+#logoText {
+  line-height: 0;
+  vertical-align: middle;
+}
+#myNavbar {
+  font-family: "Anton", sans-serif;
+  font-size: min(3vw, 2em);
+}
+#outlinedBody {
+	font-family: "Oswald", sans-serif;
+  font-size: min(3vw, 1em);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 #contactMe {
   font-family: "Bakbak One", sans-serif;
+  font-size: min(4vw, 2.5em);
 }
 #home {
   font-family: "Bakbak One", sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
+}
+#copyrightNotice {
+  font-family: "Bakbak One", sans-serif;
+  font-size: min(4vw, 2.5em);
+}
 .menu {display: none}
 .bgimg {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("DoggosBG.png");
   background-attachment: fixed;
-  min-height: 50%;
+  min-height: 70%;
 }
 .bgimg2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("DoggosBG.png");
   background-attachment: fixed;
-  min-height: 10%;
+  min-height: 50%;
+}
+.titlebg {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("water.png");
 }
 .column {
   float: left;
-  width: 33.33%;
-  padding: 10px;
+  width: 13%;
+  height: min(12vw, 10em);
+}
+.row {
+  height: min(12vw, 10em);
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </style>
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top ">
-  <!--<div class="w3-bar w3-xxxlarge w3-black" style="display:flex; flex-direction: row; justify-content: left; align-items: center" id="logoBar">
-    <img src="TXKS_Thumbnail_Transparent.png" style="width:100px;height:100px;">
-    <p>TEXARKANASAURUS</p>
-  </div>-->
-  <div class="row w3-bar w3-xxxlarge w3-black">
+<div class="w3-top" style="height:min(12vw, 10em);">
+  <div class="titlebg row ">
     <div class="column">
-      <img src="TXKS_Thumbnail_Transparent.png" style="width:3.2em;height:3.2em;">
+      <img src="logoless.png" style="width:min(12vw, 10em);height:min(12vw, 10em);">
+      <!--<img src="logoless.png" style="width:90%;height:90%;">-->
     </div>
-  <div class="column" id="logoBar">
-    <p>TEXARKANASAURUS</p>
+    <div class="column w3-wide" id="logoBar">
+      <p id="logoText">TEXARKANASAURUS</p>
+    </div>
+    <!-- <div class="column">
+      <p></p>
+    </div> -->
   </div>
-  <div class="column">
-    <p></p>
-  </div>
-</div>
-  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+  <footer class="w3-container w3-black" id="myNavbar">
+  <!--<div class="bgimg w3-bar  text-color:black" style="opacity:.92;" id="myNavbar">-->
     <a href="#" class="w3-bar-item w3-button" style="color: #3dc3e9">Home</a>
     <a href="demos.html" class="w3-bar-item w3-button">Game Demos</a>
     <a href="apps.html" class="w3-bar-item w3-button">Apps</a>
     <a href="aboutme.html" class="w3-bar-item w3-button">About Me</a>
-  </div>
+  </footer>
 </div>
+
   
 <!-- Header with image -->
-<header class="bgimg w3-display-container " id="home">
+<header class="bgimg w3-display-container" id="home">
   <!--<div class="w3-display-middle w3-center">
     <span class="w3-text-white w3-hide-small" style="font-size:100px">Texarkanasaurus.com</span>
     <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>texarkanasaurus</b></span>
@@ -94,36 +152,38 @@ h3, h4, h5, h6 {
 </header>
 
 
-<!-- About Container -->
-<div class=" bgimg w3-container w3-padding-64 w3-xlarge">  
-  <div class="w3-card-4 " style="width:60%; opacity: 0.8">
-    <header class="w3-container w3-black">
-      <h1>Texarkanasaurus</h1>
-      <h3>The Hobby Projects Collection</h3>
-    </header>
 
-    <div class="w3-container w3-black" style="opacity: 1.0">
-      <p>This is where I'll be posting a collection of demos and projects that I've worked on.  Some of these may be of no interest to you, my most esteemed guest.  Others may make you weep with joy and fathom existence in a way you never have before.  I don't know, I'm not here to tell you what to do.
+<!-- App Page Container -->
+<!--<div class="bgimg w3-col l8 s12">-->
+<div class=" bgimg w3-container w3-padding-64 w3-xlarge">  
+  <div class="w3-card-12" style="border: 5px solid black;background-color: #1b2024;color: #eeeeee; opacity: 0.93; margin-left: 13vw; margin-right: 13vw;">
+    <div class="w3-container">
+      <h1><b>Texarkanasaurus</b></h1>
+      <h3>The Hobby Projects Collection</h3>
+    </div>
+
+    <div class="w3-container" id="outlinedBody">
+      <p>This is where I'll be posting a collection of demos and projects that I've worked on.  Some of these may be of no interest to you, my most esteemed guest.  Others may make you weep with joy and fathom existence in a way you never have before.  I don't know, I'm not here to tell you what to do.
         <br>
         <br>
-        Some of these are works in progress. Some are just demos and not meant to be anything more. I'm sure that if I post enough stuff here, some will just be sad.  But hey, check it out, and let me know what you think.
+        Some of these are works in progress. Some are just demos and not meant to be anything more. I'm sure that if I post enough stuff here, some will just be sad.  But hey, check it out, and let me know what you think.
         <br>
-        <br>I should probably mention that Texarkanasaurus is not my real name.  So what IS Texarkanasaurus?  If you stick around long enough, you may come to see that in a way, we are ALL Texarkanasaurus.  That's when you should leave, immediately.  No good comes from that.
+        <br>I should probably mention that Texarkanasaurus is not my real name.  So what IS Texarkanasaurus?  If you stick around long enough, you may come to see that in a way, we are ALL Texarkanasaurus.  That's when you should leave, immediately.  No good comes from that.
         <br>
         <br>Enjoy!
        </p>
     </div>
   </div>
+
+  <!--Break-->
+  <p><br><br></p>
 </div>
-<div class="bgimg2 w3-container " id="contactMe">
-    <a data-testid="linkElement" href="mailto:texarkanasaurus@gmail.com?subject=I,%20too,%20am%20Texarkanasaurus" target="_self" class="_1fbEI" aria-disabled="false">
-      <span class="w3-tag w3-xlarge w3-opacity w3-hover-opacity-off" style="color: #FE602F">Contact Me</span>
-    </a>
-  </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-48 w3-small" id="copyrightNotice">
-  <p>©2023 Texarkanasaurus.com</p>
+<footer class="w3-center w3-black w3-padding-16 w3-small" id="copyrightNotice">
+  <p>All images, games, music, logos, names, titles, etc.  ©2022 Texarkanasaurus.com
+  <br>Website layout uses an <a href="LICENSE.txt">Apache 2.0 License</a>.
+  <br>All rights reserved.</p>
 </footer>
 
 </body>
